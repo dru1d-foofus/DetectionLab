@@ -536,7 +536,8 @@ test_suricata_prerequisites() {
 install_guacamole() {
   echo "[$(date +%H:%M:%S)]: Installing Guacamole..."
   cd /opt || exit 1
-  apt-get -qq install -y libcairo2-dev libjpeg62-dev libpng-dev libossp-uuid-dev libfreerdp-dev libpango1.0-dev libssh2-1-dev libssh-dev libvncserver-dev tomcat8 tomcat8-admin tomcat8-user
+  apt-get -qq install -y tomcat8 tomcat8-admin tomcat8-user
+  apt-get -qq install -y libcairo2-dev libjpeg62-dev libpng-dev libossp-uuid-dev libfreerdp-dev libpango1.0-dev libssh2-1-dev libssh-dev libvncserver-dev
   wget --progress=bar:force "http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/1.0.0/source/guacamole-server-1.0.0.tar.gz" -O guacamole-server-1.0.0.tar.gz
   tar -xf guacamole-server-1.0.0.tar.gz && cd guacamole-server-1.0.0 || echo "[-] Unable to find the Guacamole folder."
   ./configure &>/dev/null && make --quiet &>/dev/null && make --quiet install &>/dev/null || echo "[-] An error occurred while installing Guacamole."
