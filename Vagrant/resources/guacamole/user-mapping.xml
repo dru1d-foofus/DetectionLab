@@ -8,34 +8,13 @@
             <param name="password">vagrant</param>
         </connection>
 
-        <connection name="wef">
-            <protocol>rdp</protocol>
-            <param name="hostname">192.168.38.103</param>
-            <param name="port">3389</param>
-            <param name="username">vagrant</param>
-            <param name="password">vagrant</param>
-            <param name="security">nla</param>
-            <param name="ignore-cert">true</param>
+        <connection name="Team1">
+            <protocol>vnc</protocol>
+            <param name="hostname">192.168.38.111</param>
+            <param name="port">5901</param>
+            <param name="password">Team1Password</param>
         </connection>
 
-        <connection name="win10">
-            <protocol>rdp</protocol>
-            <param name="hostname">192.168.38.104</param>
-            <param name="port">3389</param>
-            <param name="username">vagrant</param>
-            <param name="password">vagrant</param>
-            <param name="security">nla</param>
-            <param name="ignore-cert">true</param>
-        </connection>
-
-        <connection name="dc">
-            <protocol>rdp</protocol>
-            <param name="hostname">192.168.38.102</param>
-            <param name="port">3389</param>
-            <param name="username">vagrant</param>
-            <param name="password">vagrant</param>
-            <param name="security">nla</param>
-            <param name="ignore-cert">true</param>
         </connection>
     </authorize>
 </user-mapping>
